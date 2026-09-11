@@ -1,0 +1,92 @@
+[
+  {
+    "event_id": "evt-001",
+    "timestamp": "2026-09-10T09:14:00Z",
+    "host": "LAB-WS-017",
+    "user": "synthetic.user",
+    "event_type": "control_impairment",
+    "severity": "high",
+    "source": "synthetic-edr",
+    "process": "security-control-service",
+    "privileged": true,
+    "evidence": "Endpoint protection service unexpectedly disabled in lab telemetry."
+  },
+  {
+    "event_id": "evt-002",
+    "timestamp": "2026-09-10T09:17:00Z",
+    "host": "LAB-WS-017",
+    "user": "synthetic.user",
+    "event_type": "credential_theft_signal",
+    "severity": "critical",
+    "source": "synthetic-edr",
+    "process": "unknown-process.exe",
+    "privileged": true,
+    "evidence": "Synthetic protected-process access signal for defensive correlation only."
+  },
+  {
+    "event_id": "evt-003",
+    "timestamp": "2026-09-10T09:21:00Z",
+    "host": "LAB-WS-017",
+    "user": "synthetic.user",
+    "event_type": "c2_like_traffic",
+    "severity": "high",
+    "source": "synthetic-network",
+    "destination": "198.51.100.44:443",
+    "evidence": "Documentation-range destination used for periodic-flow simulation."
+  },
+  {
+    "event_id": "evt-004",
+    "timestamp": "2026-09-10T11:02:00Z",
+    "host": "LAB-SRV-004",
+    "user": "svc-lab",
+    "event_type": "persistence_change",
+    "severity": "medium",
+    "source": "synthetic-edr",
+    "process": "services.exe",
+    "evidence": "Synthetic service-change event requiring analyst validation."
+  },
+  {
+    "event_id": "evt-005",
+    "timestamp": "2026-09-10T11:05:00Z",
+    "host": "LAB-SRV-004",
+    "user": "svc-lab",
+    "event_type": "remote_service",
+    "severity": "medium",
+    "source": "synthetic-windows",
+    "destination": "LAB-SRV-004",
+    "evidence": "Synthetic remote-service administration event."
+  },
+  {
+    "event_id": "evt-006",
+    "timestamp": "2026-09-10T12:30:00Z",
+    "host": "LAB-WS-022",
+    "user": "analyst-lab",
+    "event_type": "suspicious_powershell",
+    "severity": "low",
+    "source": "synthetic-powershell",
+    "process": "powershell.exe",
+    "evidence": "Benign lab command-line pattern retained for tuning and false-positive discussion."
+  },
+  {
+    "event_id": "evt-007",
+    "timestamp": "2026-09-10T14:44:00Z",
+    "host": "LAB-WS-031",
+    "user": "synthetic.operator",
+    "event_type": "ransomware_behavior",
+    "severity": "critical",
+    "source": "synthetic-edr",
+    "process": "sample-process.exe",
+    "evidence": "Synthetic destructive-file-behavior signal; no malware is included."
+  },
+  {
+    "event_id": "evt-008",
+    "timestamp": "2026-09-10T14:45:00Z",
+    "host": "LAB-WS-031",
+    "user": "synthetic.operator",
+    "event_type": "control_impairment",
+    "severity": "high",
+    "source": "synthetic-edr",
+    "privileged": true,
+    "evidence": "Synthetic defense-impairment signal correlated with destructive behavior."
+  }
+]
